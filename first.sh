@@ -19,3 +19,12 @@ if [ "$num" -gt 0 ];           # -gt this means grater than, -lt means less than
     then echo "YES";
     else echo "NO";
 fi                              # fi, you should use it to end the if statement
+
+# Here we demonastrate For statement
+
+colors="red black white"
+
+for clo in $colors
+do 
+    echo $clo
+done 
