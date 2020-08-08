@@ -9,3 +9,5 @@ echo "Hello Hazem Elbaz in Bach Scripting Tutorial"
 
 name=tea                # here we declear variable
 echo "The word $name contains ${#name} chars."      # here we $name for use value of variable, and ${#name} will get count of characeters
+
+echo $((2#111)) # here we convert 111 as binary to decemal 
