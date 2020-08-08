@@ -11,3 +11,11 @@ name=tea                # here we declear variable
 echo "The word $name contains ${#name} chars."      # here we $name for use value of variable, and ${#name} will get count of characeters
 
 echo $((2#111)) # here we convert 111 as binary to decemal 
+
+# Here we demonestrate how to use if statement
+num=10
+
+if [ "$num" -gt 0 ];           # -gt this means grater than, -lt means less than 
+    then echo "YES";
+    else echo "NO";
+fi                              # fi, you should use it to end the if statement
