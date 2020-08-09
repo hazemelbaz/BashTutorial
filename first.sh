@@ -28,3 +28,9 @@ for clo in $colors
 do 
     echo $clo
 done 
+
+#var1=DSLConNeCtioN
+#echo hello, ${var1^}  # it will convert 1st letter of text to capital
+#echo ${var1,,}        # it will convert all text to capital
+#echo ${var1,}         # it will convert 1st letter of text to capital
+#echo ${var1^^}        # it will convert all text to capital
