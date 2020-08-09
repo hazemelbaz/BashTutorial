@@ -59,3 +59,12 @@ fi
 # Here another way to write if statemnet
 let num2=10
 echo $(( num2 = num1<10?1:0))
+
+
+# Here We learn How implement ARRAY
+days=(Sat Sun Mon Tue Wed Thr Fri)      # Ref To ARRAY https://tecadmin.net/working-with-array-bash-script/
+
+# Here create loop 
+echo {0..9}
+echo {100..120}
+
