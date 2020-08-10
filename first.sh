@@ -83,3 +83,18 @@ then
 else
     echo "The conditions are false"
 fi
+
+
+# Here we learn / % + *
+let num3=5
+let num4=3
+let result=0
+
+result=$(( num3 / num4 ))
+echo $result
+
+result=$(( num3 % num4 ))
+echo $result
+
+result=$(( num3 * num4 ))
+echo $result
