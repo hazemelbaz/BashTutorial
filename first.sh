@@ -103,3 +103,24 @@ echo $result
 echo "Enter your name: "
 read name1
 echo $name1
+
+# Bash Scripting CheatSheet : https://devhints.io/bash
+
+# Here we learn retuen vales of command line when you are write 
+
+NO_OF_ARGS=2
+E_BADARGS=85
+E_UNREADABLE=86
+
+if [ $# -ne "$NO_OF_ARGS" ]         # the $# means thre numbers of command line arguments, -ne means not equal
+then
+    echo " Usage: 'basename $0' testfile1 testfile2"     # $0 means the name of script writing now (name of current file)
+exit $E_BADARGS
+fi
+
+if [[ ! -r "$1" || ! -r "$2" ]]      # ! means NOT, -r means readable file, $1 is arrgument, $2 is 2nd arrgument
+then
+    echo "FILES ARE REAL"
+    exit $E_UNREADABLE
+fi
+
