@@ -68,3 +68,18 @@ days=(Sat Sun Mon Tue Wed Thr Fri)      # Ref To ARRAY https://tecadmin.net/work
 echo {0..9}
 echo {100..120}
 
+# Here we learn logical OR and Logical AND
+let test=1
+if [ "$test" -gt 0 ] || [ "$test" -eq 10 ]   # Here || means logical OR
+then
+    echo "The conditions are true"
+else
+    echo "The conditions are false"
+fi
+
+if [ "$test" -gt 0 ] && [ "$test" -eq 10 ]   # Here && means logical AND
+then
+    echo "The conditions are true"
+else
+    echo "The conditions are false"
+fi
