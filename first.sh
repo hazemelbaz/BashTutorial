@@ -104,6 +104,42 @@ echo "Enter your name: "
 read name1
 echo $name1
 
+
+
+# Here we learn about Condition Statements Ref: https://linuxize.com/post/bash-if-else-statement/
+# Neasted Condition
+
+let num5=9
+
+if [[ $num5 -gt 0 ]]
+then
+    if [[ $num5 -lt 5 ]]
+    then
+        echo "Num GT 0 and LT 5"
+    fi
+elif [[ $num5 -eq 9 ]]
+then
+    echo "Its Num 9"
+else
+    echo "I dont Konw"
+fi 
+
+
+echo -n "Enter a number: "
+read VAR
+
+if [[ $VAR -gt 10 ]]
+then
+  echo "The variable is greater than 10."
+elif [[ $VAR -eq 10 ]]
+then
+  echo "The variable is equal to 10."
+else
+  echo "The variable is less than 10."
+fi
+
+
+
 # Bash Scripting CheatSheet : https://devhints.io/bash
 
 # Here we learn retuen vales of command line when you are write 
