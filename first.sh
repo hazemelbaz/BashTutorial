@@ -85,7 +85,7 @@ else
 fi
 
 
-# Here we learn / % + *
+# Here we learn / % + *   Ref: https://bash.cyberciti.biz/guide/Perform_arithmetic_operations
 let num3=5
 let num4=3
 let result=0
@@ -98,3 +98,8 @@ echo $result
 
 result=$(( num3 * num4 ))
 echo $result
+
+# Here learn how read data from promot, get input from screen 
+echo "Enter your name: "
+read name1
+echo $name1
