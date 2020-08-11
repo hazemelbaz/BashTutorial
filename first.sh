@@ -157,6 +157,16 @@ fi
 if [[ ! -r "$1" || ! -r "$2" ]]      # ! means NOT, -r means readable file, $1 is arrgument, $2 is 2nd arrgument
 then
     echo "FILES ARE REAL"
-    exit $E_UNREADABLE
+    # exit $E_UNREADABLE
 fi
 
+# Here we learn File Text Operation
+# 01- we check if file exsits or not !!!
+
+var2=/Users/hazemelbaz/Documents/GitHub/BashTutorial/wood.txt 
+if [[ -e $var2 ]] # -e means that .. checking if file exsit or not
+then 
+    echo "File is Exsit"
+else
+    echo "File Not Exsit"
+fi
