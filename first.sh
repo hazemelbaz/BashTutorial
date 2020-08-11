@@ -29,6 +29,12 @@ do
     echo $clo
 done 
 
+for n in {0..5}
+do 
+    echo "The index [$n]"
+done
+
+
 #var1=DSLConNeCtioN
 #echo hello, ${var1^}  # it will convert 1st letter of text to capital
 #echo ${var1,,}        # it will convert all text to capital
