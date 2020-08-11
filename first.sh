@@ -170,3 +170,8 @@ then
 else
     echo "File Not Exsit"
 fi
+
+# -f returns true, if file is regular file, not directory or device file.
+# -r returns true, if the file have permissions to readable, means user has permission to read a file.
+# -x returns true, if the user has permissions to excute the file.
+# -w returns true, if the user has permissions to write to file.
