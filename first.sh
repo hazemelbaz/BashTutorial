@@ -181,3 +181,15 @@ fi
 # -r returns true, if the file have permissions to readable, means user has permission to read a file.
 # -x returns true, if the user has permissions to excute the file.
 # -w returns true, if the user has permissions to write to file.
+
+# Here we learn create simple function
+
+# Here we implement the function
+someFunction()
+{
+    echo "Function Name is: $FUNCNAME"
+}
+
+someFunction           # Here we Call the function and use it
+
+echo "Outside the function, \$FUNCNAME= $FUNCNAME"    # Here $FUNCNAME will returns NULL, because this variable is local in the function can not use outside function
