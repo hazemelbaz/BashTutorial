@@ -193,3 +193,11 @@ someFunction()
 someFunction           # Here we Call the function and use it
 
 echo "Outside the function, \$FUNCNAME= $FUNCNAME"    # Here $FUNCNAME will returns NULL, because this variable is local in the function can not use outside function
+
+
+
+# Hello Hassan This vedio to demonstrate how to commit your change over VSCode
+
+# now i make save this comments change  by control S
+
+# watch the blue mark with number 1 on left side 
