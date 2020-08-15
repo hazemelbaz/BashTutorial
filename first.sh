@@ -213,3 +213,11 @@ do
         echo "Inner loop $y !!!!! Outer loop iteration $x"
     done
 done
+
+
+# Here we learn variables, make newline in code with \n 
+
+declare -r PI=3.1415269           # Here we implement Uniqe variable, read only variable
+printf "Fourth decimal of PI is %1.4f \n" $PI             # allow you to format the output on the screen, \n means make new line 
+
+ 
