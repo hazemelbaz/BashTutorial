@@ -258,3 +258,60 @@ read -n 2 <&3
 echo -n . >&3
 exec 3>&-
 cat fd.txt
+
+
+# Here we learn more about functions
+# learn how to declaration function
+
+function_name ()
+{
+   echo " commands ......"
+}
+
+# function1_name() { #command1; command2; command3; }
+# suppose here some written code ....
+
+f1 () 
+{
+    echo "Herer Function 1 call Function 2"
+    f2
+}
+
+f2 ()
+{
+    echo "Hi, i am function 2"
+}
+
+f1        # Here we call function 1
+
+
+# Here learn nested functions 
+f3 ()
+{
+    f4 ()
+    {
+        echo "This is nested function 4"
+    }
+}
+
+f3
+f4     # this function will  not run because it delared inside another one
+
+# Here learn strange function
+_()
+{
+    echo "Hey, i am strange function call: $FUNCNAME"
+} 
+_    # here we call the function _ 
+
+# Here learn pass arguments 
+func1 ()
+{
+    echo "First arg is $1, second arg is $2"
+}
+
+var3=10
+var4=20
+func1 $var3 var4
+
+
