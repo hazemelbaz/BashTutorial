@@ -157,7 +157,7 @@ E_UNREADABLE=86
 if [ $# -ne "$NO_OF_ARGS" ]         # the $# means thre numbers of command line arguments, -ne means not equal
 then
     echo " Usage: 'basename $0' testfile1 testfile2"     # $0 means the name of script writing now (name of current file)
-exit $E_BADARGS
+#exit $E_BADARGS
 fi
 
 if [[ ! -r "$1" || ! -r "$2" ]]      # ! means NOT, -r means readable file, $1 is arrgument, $2 is 2nd arrgument
@@ -220,4 +220,23 @@ done
 declare -r PI=3.1415269           # Here we implement Uniqe variable, read only variable
 printf "Fourth decimal of PI is %1.4f \n" $PI             # allow you to format the output on the screen, \n means make new line 
 
- 
+# Here we learn Regular Expression 
+E_NOPATTERN=71
+DICT=/Users/hazemelbaz/Documents/GitHub/BashTutorial/linux.words
+if [ -z "$1" ]     # -z returns true if there is one parameter in found, returns false if no parameter exsits
+then
+    echo
+    echo "Usage:"
+    echo "'basename $0' \"pattern,\""
+    echo "where \"pattern\" is in the form"
+    echo "ooo..oo.o..."
+    echo
+    echo "The o's are letters you already know,"
+    echo "and the periods are missing letters."
+    echo "Letters and periods can be in any position."
+    echo "For example: w..i....n"
+    echo 
+    exit $E_NOPATTERN
+fi
+
+grep ^"$1"$ "$DICT"      # ^ means the begginig of the line, $ means the ends of the line
