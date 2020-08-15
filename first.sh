@@ -337,4 +337,4 @@ echo ${#arr1[*]}  # will prints out size of array arr1
 
 
 
-
+# Here The Vedio review all the course fastly
