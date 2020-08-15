@@ -236,7 +236,25 @@ then
     echo "Letters and periods can be in any position."
     echo "For example: w..i....n"
     echo 
-    exit $E_NOPATTERN
+    #exit $E_NOPATTERN
 fi
 
 grep ^"$1"$ "$DICT"      # ^ means the begginig of the line, $ means the ends of the line
+
+
+# Here we learn re-direction
+file1=wood.txt
+echo "This Line is Send to $file1" 1>$file1
+
+# Here first we add 12345 to fd.txt 
+# then we sgin 3 to fd.txt 
+# then we read only 2 chart from a file 
+# then we write . into file
+# then we close the fd.txt file 
+# filanlly we move the result of thers action into fd.txt file
+echo 12345 > fd.txt
+exec 3<>fd.txt
+read -n 2 <&3
+echo -n . >&3
+exec 3>&-
+cat fd.txt
