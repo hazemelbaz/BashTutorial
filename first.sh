@@ -201,3 +201,15 @@ echo "Outside the function, \$FUNCNAME= $FUNCNAME"    # Here $FUNCNAME will retu
 # now i make save this comments change  by control S
 
 # watch the blue mark with number 1 on left side 
+
+
+# Here We learn about loops
+#for x in {1..5}
+for x in 1 2 3 4 5
+do
+    echo "outer loop $x ------------------------------------------"
+    for y in 1 2 3 
+    do 
+        echo "Inner loop $y !!!!! Outer loop iteration $x"
+    done
+done
