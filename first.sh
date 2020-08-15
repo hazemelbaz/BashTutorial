@@ -314,4 +314,27 @@ var3=10
 var4=20
 func1 $var3 var4
 
+# Here learn more about ARRAY 
+declare -a arr     # here -a means we declare an array
+arr=( 10 20 30 40 50 )   # here we initialize array arr
+
+echo -e "${arr[0]}\n${arr[2]}"
+
+arr=( [0]=first [1]="second" [7]=45 )
+echo -e "${arr[0]}\n${arr[1]}\n${arr[7]}"
+
+A=something123
+echo ${A[*]}
+echo ${A[0]}
+echo ${A[1]}
+echo ${#A[@]}    # here it prints out count of elements at A
+
+
+arr1=( zero one two)
+echo ${arr1[0]}   # will prints out 1st element
+echo ${#arr1[0]}  # will prints out length of 1st element
+echo ${#arr1[*]}  # will prints out size of array arr1
+
+
+
 
